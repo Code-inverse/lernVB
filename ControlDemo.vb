@@ -32,14 +32,27 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnRemCity.Click
-
+        If listBoxS.SelectedIndex = 0 Then
+            MsgBox("please select any city to remove")
+        End If
+        listBoxS.Items.Remove(listBoxS.SelectedItem)
+        lblStotal.Text = " Total Cities :" & listBoxS.Items.Count
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAddCity.Click
+        If txtBoxCity.Text = "" Then
+            MsgBox("please enter any city name")
+            txtBoxCity.Focus()
+            Exit Sub
+        End If
+        listBoxS.Items.Add(txtBoxCity.Text)
+        txtBoxCity.Text = ""
+        txtBoxCity.Focus()
+        lblStotal.Text = " Total Cities :" & listBoxS.Items.Count
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtBoxCity.TextChanged
 
     End Sub
 End Class

@@ -35,7 +35,7 @@ Partial Class frmCtrlDemo
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtBoxCity = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'listBoxS
@@ -156,20 +156,20 @@ Partial Class frmCtrlDemo
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "Enter City Name"
         '
-        'TextBox1
+        'txtBoxCity
         '
-        Me.TextBox1.Location = New System.Drawing.Point(341, 281)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(177, 35)
-        Me.TextBox1.TabIndex = 13
+        Me.txtBoxCity.Location = New System.Drawing.Point(341, 281)
+        Me.txtBoxCity.Multiline = True
+        Me.txtBoxCity.Name = "txtBoxCity"
+        Me.txtBoxCity.Size = New System.Drawing.Size(177, 35)
+        Me.txtBoxCity.TabIndex = 13
         '
         'frmCtrlDemo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtBoxCity)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -203,5 +203,5 @@ Partial Class frmCtrlDemo
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtBoxCity As TextBox
 End Class
